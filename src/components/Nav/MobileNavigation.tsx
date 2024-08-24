@@ -1,5 +1,5 @@
  
-import { useContext } from 'react'
+// import { useContext } from 'react'
 import { mobileNavigation } from './NavData'
 import { NavLink } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ const MobileNavigation = () => {
         
         <div className='flex items-center justify-between h-full text-neutral-400'>
             {
-                mobileNavigation.map((nav,index)=>{
+                mobileNavigation.map((nav)=>{
                     return(
                         <NavLink 
                             key={nav.label+"mobilenavigation"} 

@@ -1,7 +1,7 @@
-import React, { FormEvent, useEffect, useState } from 'react'
+import  { FormEvent, useEffect, useState } from 'react'
 import logo from '/logomain.png'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
-import userIcon from '../../assets/user.png'
+// import userIcon from '../../assets/user.png'
 import { IoSearchOutline } from "react-icons/io5";
 import { navigation } from './NavData';
 

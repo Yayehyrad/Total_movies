@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import useFetchDetails from '../hooks/useFetchDetails'
@@ -109,7 +109,7 @@ const Details = () => {
                 <h2 className='font-bold text-lg'>Cast :</h2>
                 <div className='grid grid-cols-[repeat(auto-fit,96px)] gap-5 my-4'>
                     {
-                      castData?.cast?.filter((el : any) => el?.profile_path).map((starCast : any ,index:any)=>{
+                      castData?.cast?.filter((el : any) => el?.profile_path).map((starCast : any )=>{
                         return(
                           <div>
                             <div>

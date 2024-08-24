@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import Card from './Card'
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 

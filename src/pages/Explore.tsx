@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Card from '../components/Card'
 
@@ -9,7 +9,7 @@ const ExplorePage = () => {
   const [data,setData] = useState<any[]>([])
   const [totalPageNo,setTotalPageNo] = useState(0)
 
-  console.log("params",params.explore)
+  console.log("params",params.explore , totalPageNo)
 
 
   const fetchData = async()=>{

@@ -1,4 +1,3 @@
-import React from "react";
 import { IconType } from "react-icons";
 import { MdHomeFilled } from "react-icons/md";
 import { PiTelevisionFill } from "react-icons/pi";

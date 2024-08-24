@@ -7,6 +7,7 @@ import MobileNavigation from './components/Nav/MobileNavigation'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import { setBannerData , setImageURL } from './store/movieSlice'
+ 
 
 function App() : ReactElement {
   const dispatch = useDispatch()
@@ -37,7 +38,9 @@ function App() : ReactElement {
   return (
     <main>
       <Header/>
-      <Outlet/>
+       <div className=' h-[100vh]'>
+        <Outlet />
+       </div>    
       <Footer/>
       <MobileNavigation/>
     </main>

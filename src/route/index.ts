@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             element : React.createElement(Explore)
         } , 
         {
-            path : ":explore/?:id" , 
+            path : ":explore/:id" , 
             element : React.createElement(Details)
         },
         {

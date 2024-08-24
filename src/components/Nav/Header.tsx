@@ -1,5 +1,5 @@
 import React, { FormEvent, useEffect, useState } from 'react'
-import logo from '../../assets/logo.png'
+import logo from '/logomain.png'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import userIcon from '../../assets/user.png'
 import { IoSearchOutline } from "react-icons/io5";
@@ -24,12 +24,13 @@ function Header() {
 
 return (
   <header className='fixed top-0 w-full h-16 bg-black bg-opacity-50 z-40'>
-          <div className='container mx-auto px-3 flex items-center h-full'>
+          <div className='container mx-auto px-3 flex items-center h-full  '>
               <Link to={"/"}>
                   <img
                       src={logo}
                       alt='logo'
-                      width={120} 
+                      className='w-[280px]'
+                    //   width={180} 
                   />
               </Link>
 
@@ -47,8 +48,8 @@ return (
                   }
               </nav>
 
-              <div className='ml-auto flex items-center gap-5'>
-                  <form className='flex items-center gap-2' onSubmit={handleSubmit}>
+              <div className='ml-auto flex items-center gap-5 mr-4'>
+                  <form className='flex items-center gap-2 ' onSubmit={handleSubmit}>
                       <input
                           type='text'
                           placeholder='Search here...'
@@ -56,16 +57,11 @@ return (
                           onChange={(e)=>setSearchInput(e.target.value)}
                           value={searchInput}
                       />
-                      <button className='text-2xl text-white'>
+                      <button className='text-2xl text-white hidden lg:inline'>
                               <IoSearchOutline/>
                       </button>
                   </form>
-                  <div className='w-8 h-8 rounded-full overflow-hidden cursor-pointer active:scale-50 transition-all'>
-                      <img
-                          src={userIcon}
-                          width='w-ful h-full' 
-                      />
-                  </div>
+                  
               </div>
           </div>
   </header>
